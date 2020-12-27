@@ -1,0 +1,73 @@
+body,html{
+    height: 100%;
+    margin: 0;
+   
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.container{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.text{
+   
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    
+}
+.text h1{
+    border: 1px solid grey;
+    width: fit-content;
+    text-align: center;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: rgb(128, 128, 128,0.5);
+}
+
+.img1, .img2, .img3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.img1{
+    min-height: 100%;
+    background-image: url(image/img1.jpg);
+    position: relative;
+}
+
+.img2{
+    min-height: 500px;
+    background-image: url(image/treadmill.jpg);
+}
+.img3{
+    min-height: 500px;
+    background-image: url(image/img3.jpg);
+}
+
+.container-dark{
+    background-color: #6B7280;
+    padding: 1rem;
+    color:white;
+}
+
+.container-light{
+    background-color: #D1D5DB;
+    padding: 1rem;
+}
+
+@media(max-width:568px){
+    .img1, .img2, .img3{
+    background-attachment: scroll;
+    }
+}
